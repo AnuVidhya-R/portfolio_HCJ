@@ -7,7 +7,9 @@
     width:1500px;
     height:100px;
     background-color: rgb(251, 231, 234);
-    position:static;
+    position:fixed;
+     top: 0;
+   overflow: hidden;
 }
 .img{
     background-image:url("./Assests/girl1.jpeg");
@@ -21,16 +23,21 @@
     gap:25px;
     color:wheat;
     padding-top: 0;
-    
+    margin: 0;
+   padding: 0;
+  
+
 }
 
 .head-item li{
     list-style: none;
     font-size:20px;
+    margin-top: 25px;
+
 }
 .head-item a{
      text-decoration: none;
-     color: #ff6600;
+     color: #92847a;
     letter-spacing :0.1em;
     transition: 5s;
 }
@@ -46,22 +53,24 @@
     margin-top:15px;
     display:flex;
     align-items: center;
+    position:fixed
 }
 
 .box1{
     margin-left:300px;
-    margin-top:70px;
+    margin-top:150px;
     border:2px solid rgb(212, 203, 203);
     border-radius:25px;
     width:900px;
     height:500px;
     box-shadow:0px 4px 18px rgba(0,0,0,0.7); 
     background-color: rgb(247, 235, 235);
+
 }
 
 .box1:hover{
      transition:transfor 0.3 ease;
-   transform: scale(1.2);
+    transform: translateY(-5px);
 }
 .box2{
     margin-left:300px;
@@ -75,7 +84,7 @@
 }
 .box2:hover{
      transition:transfor 0.3 ease;
-   transform: scale(1.2);
+  transform: translateY(-5px);
 }
 .box3{
     margin-left:300px;
@@ -90,7 +99,7 @@
 }
 .box3:hover{
      transition:transfor 0.3 ease;
-   transform: scale(1.2);
+   transform: translateY(-5px);
 }
 .box4{
     margin-left:300px;
@@ -104,7 +113,7 @@
 }
 .box4:hover{
      transition:transfor 0.3 ease;
-   transform: scale(1.2);
+   transform: translateY(-5px);
 }
 .box5{
     margin-left:300px;
@@ -120,19 +129,16 @@
 }
 .box5:hover{
      transition:transfor 0.3 ease;
-   transform: scale(1.2);
+  transform: translateY(-5px);
 }
 
 .photo{
-    border-radius:25px;
-    width:250px;
-    height:300px;
-     margin-left:600px;
-    margin-top:60px;
-     border:2px solid rgb(212, 203, 203);
-    border-radius:25px;
-    width:250px;
-    height:300px;
+   margin-right: 60px;
+   margin-bottom: 300px;
+  width:400px;
+  height:350px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
 .box2 h1{
     text-align: center;
@@ -298,4 +304,48 @@ body{
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
+.boxic img,.boxjc img,.boxkc img{
+     width: 230px;
+    height: 150px;
+     border-radius:25px;
+}
+.about-section{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 100px;
+  margin-top:75px;
+}
 
+.profile-pic{
+  width: 170px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  
+}
+
+.about-text{
+  max-width: 600px;
+  font-size: 20px;
+ line-height: 1.8;
+  word-spacing: 4px;
+}
+
+.home-section{
+  display: flex;
+   flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+  margin-left: 100px;
+  margin-top:15px;
+}
+
+.home-text{
+  max-width: 600px;
+  font-size: 20px;
+ line-height: 1.8;
+  word-spacing: 4px;
+    margin-bottom: 300px;
+}
